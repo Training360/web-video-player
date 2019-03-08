@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin-ext');
+
+body {
+    background: #efefef;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 400;
+    margin-top: 0;
+    text-align: center;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+.btn {
+    background-color: #343a40;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin: .25rem;
+    padding: .5rem 1rem;
+}
+
+.btn:hover {
+    background-color: #E73B2B;
+}
+
+.btns {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.row {
+    margin-top: 1rem;
+}
