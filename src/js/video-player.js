@@ -19,5 +19,4 @@ window.videoPlayers = [];
             window.videoPlayers.push(new VideoPlayer(item));
         }
     )
-    console.log('videoPlayers:', window.videoPlayers);
 })(window, videojs);

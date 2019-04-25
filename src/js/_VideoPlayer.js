@@ -47,7 +47,6 @@ class VideoPlayer {
     }
 
     setHotKeys() {
-        console.log('setHotKeys', this.player);
         this.player.hotkeys({
             alwaysCaptureHotkeys: true,
             enableVolumeScroll: false,
@@ -80,6 +79,18 @@ class VideoPlayer {
                 }
             }
         });
+    }
+
+    setVideo(url) {
+        this.player.getChild('posterImage').setSrc(url.replace('master.m3u8', 'media-4/poster.jpg'));
+        this.player.src({
+            src: url,
+            type: 'application/x-mpegURL'
+        });
+    }
+
+    toggleControlBar() {
+        this.player.el().classList.toggle('vjs-pinned-controls');
     }
 
 }
